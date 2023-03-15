@@ -1,3 +1,3 @@
-#ADVENT OF CODE
+# ADVENT OF CODE
 
 Solutions for https://adventofcode.com to have some fun
