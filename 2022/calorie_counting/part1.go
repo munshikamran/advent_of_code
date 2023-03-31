@@ -10,12 +10,6 @@ import (
 	"strings"
 )
 
-func main() {
-	// answer := 123
-	answer := getMaximumCaloriesFromFile("input.txt")
-	fmt.Println("The Elf with the maximum number of calories has ", answer, " calories!")
-}
-
 func getMaximumCaloriesFromFile(fileName string) int {
 	file, err := os.Open(fileName)
 	if err != nil {
@@ -45,4 +39,9 @@ func getMaximumCaloriesFromFile(fileName string) int {
 	}
 
 	return int(maxCals)
+}
+
+func main() {
+	answer := getMaximumCaloriesFromFile("input.txt")
+	fmt.Println("The Elf with the maximum number of calories has ", answer, " calories!")
 }
